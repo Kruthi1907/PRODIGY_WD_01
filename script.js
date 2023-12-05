@@ -35,12 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            navbar.style.backgroundColor = "rgba(225, 107, 127, 0.7)"; /* Darker Blue-Grey */
+            navbar.style.backgroundColor = "rgba(225, 107, 127, 0.7)";
         } else {
-            navbar.style.backgroundColor = "rgba(225, 107, 127, 0.7)"; /* Dark Blue-Grey */
+            navbar.style.backgroundColor = "rgba(225, 107, 127, 0.7)";
         }
 
-        // Highlight the current section in the navbar based on scroll position
         const sections = document.querySelectorAll('.section');
         let currentSectionId = '';
 
@@ -57,6 +56,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial call to handle scroll on page load
     scrollFunction();
 });
